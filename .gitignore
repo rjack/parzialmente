@@ -1,0 +1,8 @@
+# Following the "How to Create and store a Symfony2 Project in git" recipe:
+# http://symfony.com/doc/current/cookbook/workflow/new_project_git.html
+/web/bundles/
+/app/bootstrap*
+/app/cache/*
+/app/logs/*
+/vendor/
+/app/config/parameters.ini
