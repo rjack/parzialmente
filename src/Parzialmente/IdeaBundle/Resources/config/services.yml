@@ -1,0 +1,7 @@
+parameters:
+#    parzialmente_idea.example.class: Parzialmente\IdeaBundle\Example
+
+services:
+#    parzialmente_idea.example:
+#        class: %parzialmente_idea.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
