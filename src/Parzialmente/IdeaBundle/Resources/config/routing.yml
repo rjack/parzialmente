@@ -1,3 +1,7 @@
-ParzialmenteIdeaBundle_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: ParzialmenteIdeaBundle:Default:index }
+ParzialmenteIdeaBundle_nuova:
+    pattern:  /nuova
+    defaults: { _controller: ParzialmenteIdeaBundle:Default:nuova }
+
+ParzialmenteIdeaBundle_idea:
+    pattern: /{id}/{slug}
+    defaults: { _controller: ParzialmenteIdeaBundle:Default:mostra }
