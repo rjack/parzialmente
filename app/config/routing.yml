@@ -1,6 +1,6 @@
 ParzialmenteIdeaBundle:
     resource: "@ParzialmenteIdeaBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /idee
 
 # Internal routing configuration to handle ESI
 #_internal:
