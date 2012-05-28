@@ -6,3 +6,6 @@
 /app/logs/*
 /vendor/
 /app/config/parameters.ini
+
+# Ignora il db
+/app/parzialmente.db
