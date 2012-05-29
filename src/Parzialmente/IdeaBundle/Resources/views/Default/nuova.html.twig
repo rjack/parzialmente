@@ -1,3 +1,6 @@
 <h1>Nuova idea</h1>
 
-<p>Qui ci va la form!</p>
+<form action="{{ path("ParzialmenteIdeaBundle_idee") }}" method="post" {{ form_enctype(form) }}>
+  {{ form_widget(form) }}
+  <input type="submit">
+</form>

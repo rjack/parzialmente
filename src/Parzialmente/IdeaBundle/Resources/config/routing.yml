@@ -5,3 +5,7 @@ ParzialmenteIdeaBundle_nuova:
 ParzialmenteIdeaBundle_idea:
     pattern: /{id}/{slug}
     defaults: { _controller: ParzialmenteIdeaBundle:Default:mostra }
+
+ParzialmenteIdeaBundle_idee:
+    pattern: /
+    defaults: { _controller: ParzialmenteIdeaBundle:Default:idee }
