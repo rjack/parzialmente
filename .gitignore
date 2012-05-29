@@ -8,4 +8,4 @@
 /app/config/parameters.ini
 
 # Ignora il db
-/app/parzialmente.db
+/app/db/parzialmente.db
