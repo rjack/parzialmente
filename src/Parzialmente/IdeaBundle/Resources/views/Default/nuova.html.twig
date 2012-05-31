@@ -1,15 +1,21 @@
 <h1>Nuova idea</h1>
 
-<form action="{{ path("ParzialmenteIdeaBundle_nuova") }}" method="post" {{ form_enctype(form) }}>
+<form novalidate action="{{ path("ParzialmenteIdeaBundle_nuova") }}" method="post" {{ form_enctype(form) }}>
+
+  <div>
+  {{ form_errors(form) }}
+  </div>
 
   <div>
   {{ form_label(form.title) }}
+  {{ form_errors(form.title) }}
   </div>
   <div>
   {{ form_widget(form.title) }}
   </div>
   <div>
   {{ form_label(form.description) }}
+  {{ form_errors(form.description) }}
   </div>
   <div>
   {{ form_widget(form.description) }}
