@@ -52,4 +52,18 @@ class DefaultController extends Controller
 
         return $this->render('ParzialmenteIdeaBundle:Default:idea.html.twig', array("idea" => $idea));
     }
+
+
+    public function listaAction ()
+    {
+        $qb = $this->getDoctrine()
+            ->getRepository('ParzialmenteIdeaBundle:Idea')
+            ->createQueryBuilder('i');
+
+        $query = $qb->getQuery();
+
+        $idee = $query->getResult();
+
+        return $this->render('ParzialmenteIdeaBundle:Default:idee.html.twig', array("idee" => $idee));
+    }
 }

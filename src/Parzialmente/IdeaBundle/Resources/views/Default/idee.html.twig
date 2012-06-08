@@ -1,0 +1,7 @@
+<h1>Idee</h1>
+
+<ul>
+  {% for idea in idee %}
+    <li><a href="{{ path('ParzialmenteIdeaBundle_idea', { 'id': idea.id, 'slug': 'TODO'}) }}">{{ idea.title }}</a></li>
+  {% endfor %}
+</ul>

@@ -8,4 +8,4 @@ ParzialmenteIdeaBundle_idea:
 
 ParzialmenteIdeaBundle_idee:
     pattern: /
-    defaults: { _controller: ParzialmenteIdeaBundle:Default:idee }
+    defaults: { _controller: ParzialmenteIdeaBundle:Default:lista }
