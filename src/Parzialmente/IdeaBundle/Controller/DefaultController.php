@@ -5,6 +5,7 @@ namespace Parzialmente\IdeaBundle\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Parzialmente\IdeaBundle\Entity\Idea;
+use Parzialmente\IdeaBundle\Form\Type\IdeaType;
 
 
 class DefaultController extends Controller
@@ -16,10 +17,7 @@ class DefaultController extends Controller
         $idea->setTitle("Dai un titolo");
         $idea->setDescription("Descrivi la tua idea.");
 
-        $form = $this->createFormBuilder($idea)
-            ->add("title", "text")
-            ->add("description", "textarea")
-            ->getForm();
+        $form = $this->createForm(new IdeaType(), $idea);
 
         if ($req->getMethod() === "POST") {
             $form->bindRequest($req);
